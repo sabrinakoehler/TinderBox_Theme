@@ -1,8 +1,8 @@
 <article class="card">
   {{#if feature_image}}
     <div class="card-image">
-      <figure class="image is-4by3">
-        <img src="{{feature_image}}" alt="{{title}}">
+      <figure class="post-full-image">
+        <img class="card-img-top"src="{{feature_image}}" alt="{{title}}">
       </figure>
     </div>
   {{/if}}
@@ -11,8 +11,7 @@
     {{#if author.profile_image}}
       <div class="media">
         <div class="media-left">
-          <figure class="image
-          is-48x48">
+          <figure class="image is-48x48">
             <img src="{{author.profile_image}}" alt="Profile Image">
           </figure>
         </div>
@@ -24,11 +23,11 @@
         {{#if meta_description}}
           {{meta_description}}
         {{else}}
-          {{excerpt words="15"}}...
+          {{excerpt words="25"}}...
         {{/if}}
       </p>
       <p>
-        {{author}} in {{tags}} on
+        {{author}} {{tags}} on
         <time>{{date}}</time>
       </p>
     </div>
